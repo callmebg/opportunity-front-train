@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>联系方式</title>
+</head>
+<body>
+<h1>联系方式</h1>
+<p>
+    家长名字:<input type="text" name="Parent name" placeholder="如陈某某"></input>
+</p>
+<p>
+    家长电话：<input type="number" name="Parent phone number" placeholder="联系方式" ></input>
+</p>
+<p>
+    区域：
+    <select>
+        <option>越秀区</option>
+        <option>海珠区</option>
+        <option>荔湾区</option>
+        <option>天河区</option>
+        <option>白云区</option>
+        <option>黄埔区</option>
+        <option>南沙区</option>
+    </select>
+    </p>
+<p>
+    家教地址：<input type="text" name="Place" placeholder="教学地点"></input>
+</p>
+<button type="submit"  onclick=>提交</button>
+</body>    
