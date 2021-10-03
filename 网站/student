@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生信息</title>
+</head>    
+<body>
+    <h1>学生信息</h1>
+    <p>学生性别：
+        <input type="radio"/checked="checked" name="Sex" value="Male" required="required">男
+        <input type="radio"/name="Sex" value="Female" required="required">女
+    </p>
+    <p>学生年级：
+    <select required>
+        <option>大一</option>
+        <option>大二</option>
+        <option>大三</option>
+        <option>大四</option>
+    </select>
+    </p>
+    <p>
+        科目：
+    <select required>
+        <option>语文</option>
+        <option>数学</option>
+        <option>英语</option>
+        <option>物理</option>
+        <option>化学</option>
+        <option>生物</option>
+        <option>其他</option>
+    </select>
+    </p>
+    <p>
+        <input type="text" required="required" name="other subjects" placeholder="其他科目"></input>
+    </p>
+    <p>
+        一周上课次数：<input type="text" required="required" name="class number" placeholder="                       1~7次较合适" onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}"></input>
+    </p>
+    <p>
+        上课时间：<input type="text" required="required" name="class time" placeholder="如周日晚上（或自行协商)"></input>
+    </p>
+    <button type="button" onclick="window.location.href='./teacher.html'">下一步</button>
+</body>
